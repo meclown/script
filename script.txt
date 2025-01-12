@@ -1,0 +1,24 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("KKK", "Ocean")
+
+--Test tabs
+local TestTab = Window:NewTab("Hacks")
+
+local TestSection = TestTab:NewSection("Hacks")
+
+TestSection:NewButton("Infinite yield", "admin menu", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+
+--name
+TestSection:NewButton("Millionare empire tycoon(look at the money collect)", "inf", function()
+while wait () do
+local args = {
+     [1] = 100000000000000
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("fewjnfejwb3"):FireServer(unpack(args))
+end
+end)
